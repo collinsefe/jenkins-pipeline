@@ -9,8 +9,7 @@ pipeline {
         stage('List') {
             steps {
               sh '''
-              //https://github.com/collinsefe/jenkins-pipeline.git
-              ls -la
+              git credentialsId: 'GitHub', url: 'https://github.com/collinsefe/jenkins-pipeline.git'              ls -la
               '''
                 }
             }
