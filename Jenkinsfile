@@ -10,7 +10,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/collinsefe/jenkins-pipeline.git'
+                //git 'https://github.com/collinsefe/jenkins-pipeline.git'
+                aws -version
 
                 // Run shell script
                 sh "ls -la"
