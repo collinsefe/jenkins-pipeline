@@ -11,10 +11,10 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 //git 'https://github.com/collinsefe/jenkins-pipeline.git'
-                aws -version
+                sh 'aws -version'
 
                 // Run shell script
-                sh "ls -la"
+                sh 'ls -la'
 
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
