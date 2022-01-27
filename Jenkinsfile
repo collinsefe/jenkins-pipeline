@@ -11,7 +11,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 //git 'https://github.com/collinsefe/jenkins-pipeline.git'
-                sh 'aws -version'
+                sh 'aws --version'
 
                 // Run shell script
                 sh 'ls -la'
