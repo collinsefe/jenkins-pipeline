@@ -4,7 +4,7 @@ pipeline {
         
         stage('Hello') {
             steps {
-                echo 'Hello Print Message'
+                echo 'Hello Print Message 2'
             }
         }
         stage('Build') {
